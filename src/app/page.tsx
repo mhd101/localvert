@@ -262,7 +262,7 @@ export default function Home() {
             <h3 className="pricing-title">Lifetime</h3>
             <p className="pricing-desc">Advanced automation and capture tools with one-time access</p>
             <div className="pricing-price">
-              $7.99 <span className="pricing-original">$15.99</span> <span className="pricing-period">/lifetime</span>
+              $8 <span className="pricing-original">$15.99</span> <span className="pricing-period">/lifetime</span>
             </div>
             <div className="pricing-features">
               <div className="pricing-feature">
