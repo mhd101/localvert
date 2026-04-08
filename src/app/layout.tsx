@@ -24,12 +24,12 @@ export default function RootLayout({
             LocalVert
           </Link>
           <div className="nav-links">
-            <SectionLink href="#features" className="nav-link">Features</SectionLink>
-            <SectionLink href="#pricing" align="center" className="nav-link">Pricing</SectionLink>
-            <SectionLink href="#faq" align="center" className="nav-link">FAQ</SectionLink>
+            <SectionLink href="https://localvert.netlify.app/#features" className="nav-link">Features</SectionLink>
+            <SectionLink href="https://localvert.netlify.app/#pricing" align="center" className="nav-link">Pricing</SectionLink>
+            <SectionLink href="https://localvert.netlify.app/#faq" align="center" className="nav-link">FAQ</SectionLink>
           </div>
           <div className="nav-right" style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <SectionLink href="#pricing" align="center" className="btn btn-outline" style={{ padding: '8px 16px' }}>
+            <SectionLink href="https://localvert.netlify.app/#pricing" align="center" className="btn btn-outline" style={{ padding: '8px 16px' }}>
               Get License
             </SectionLink>
           </div>
