@@ -47,14 +47,15 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
 
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/.netlify/functions/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: params.toString(),
       });
 
-      // On local dev Netlify won't process forms, so accept 200 OR 404.
-      if (response.ok || response.status === 404) {
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok && (data.success || data.dev)) {
         setStatus("success");
       } else {
         setStatus("error");
