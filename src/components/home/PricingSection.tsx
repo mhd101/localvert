@@ -1,10 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import Link from "next/link";
 import SectionLink from "@/components/ui/SectionLink";
-import WaitlistModal from "@/components/ui/WaitlistModal";
 import { containerVariants, itemVariants } from "./motion";
 
 const freeFeatures = [
@@ -39,11 +37,8 @@ function PricingFeature({ children }: { children: string }) {
 }
 
 export default function PricingSection() {
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
-
   return (
-    <>
-      <motion.section
+    <motion.section
       id="pricing"
       className="pricing-section viewport-section section-anchor"
       initial="hidden"
@@ -70,13 +65,13 @@ export default function PricingSection() {
               <PricingFeature key={feature}>{feature}</PricingFeature>
             ))}
           </div>
-          <button
-            onClick={() => setIsWaitlistOpen(true)}
+          <SectionLink
+            href="#"
             className="btn btn-outline"
             style={{ width: "100%", padding: "12px", justifyContent: "center" }}
           >
             Get Started Free 
-          </button>
+          </SectionLink>
         </motion.div>
 
         <motion.div className="pricing-card pro" variants={itemVariants}>
@@ -105,11 +100,6 @@ export default function PricingSection() {
           </Link>
         </motion.div>
       </motion.div>
-      <WaitlistModal 
-        isOpen={isWaitlistOpen} 
-        onClose={() => setIsWaitlistOpen(false)} 
-      />
     </motion.section>
-    </>
   );
 }
