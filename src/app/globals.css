@@ -43,6 +43,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
     background-color: var(--bg-main);
@@ -202,11 +206,24 @@ body {
     color: var(--text-primary);
 }
 
+.page-shell {
+    width: 100%;
+}
+
+.section-anchor {
+    scroll-margin-top: 96px;
+}
+
+.viewport-section {
+    min-height: 100vh;
+    justify-content: center;
+}
+
 
 
 /* Hero Section */
 .hero {
-    padding: 120px 20px;
+    padding: 120px 20px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,6 +536,10 @@ body {
     flex-direction: column;
     gap: 16px;
     margin-top: 40px;
+}
+
+.faq-subtitle {
+    margin-bottom: 20px;
 }
 
 .faq-item {

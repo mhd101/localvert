@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import SectionLink from '@/components/ui/SectionLink';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -23,14 +24,14 @@ export default function RootLayout({
             LocalVert
           </Link>
           <div className="nav-links">
-            <a href="#features" className="nav-link">Features</a>
-            <a href="#pricing" className="nav-link">Pricing</a>
-            <a href="#faq" className="nav-link">FAQ</a>
+            <SectionLink href="#features" className="nav-link">Features</SectionLink>
+            <SectionLink href="#pricing" align="center" className="nav-link">Pricing</SectionLink>
+            <SectionLink href="#faq" align="center" className="nav-link">FAQ</SectionLink>
           </div>
           <div className="nav-right" style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <a href="#pricing" className="btn btn-outline" style={{ padding: '8px 16px' }}>
+            <SectionLink href="#pricing" align="center" className="btn btn-outline" style={{ padding: '8px 16px' }}>
               Get License
-            </a>
+            </SectionLink>
           </div>
         </nav>
 
@@ -44,10 +45,13 @@ export default function RootLayout({
             LocalVert
           </Link>
           <div className="footer-links">
-            <a href="#" className="footer-link">Privacy</a>
-            <a href="#" className="footer-link">Terms</a>
-            <a href="#" className="footer-link">Support</a>
-            <a href="#" className="footer-link">Twitter</a>
+            <SectionLink href="#features" className="footer-link">Features</SectionLink>
+            <SectionLink href="#pricing" align="center" className="footer-link">Pricing</SectionLink>
+            <SectionLink href="#faq" align="center" className="footer-link">Support</SectionLink>
+            <SectionLink href="#top" className="footer-link">Top</SectionLink>
+            <Link href="/contact" className="footer-link">Contact</Link>
+            <Link href="/credits" className="footer-link">Credits</Link>
+            <Link href="/privacy" className="footer-link">Privacy</Link>
           </div>
         </footer>
       </body>
