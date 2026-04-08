@@ -47,8 +47,7 @@ export default function RootLayout({
           <div className="footer-links">
             <SectionLink href="#features" className="footer-link">Features</SectionLink>
             <SectionLink href="#pricing" align="center" className="footer-link">Pricing</SectionLink>
-            <SectionLink href="#faq" align="center" className="footer-link">Support</SectionLink>
-            <SectionLink href="#top" className="footer-link">Top</SectionLink>
+            <SectionLink href="#faq" align="center" className="footer-link">FAQ</SectionLink>
             <Link href="/contact" className="footer-link">Contact</Link>
             <Link href="/credits" className="footer-link">Credits</Link>
             <Link href="/privacy" className="footer-link">Privacy</Link>
