@@ -43,6 +43,8 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
     const params = new URLSearchParams();
     params.append("form-name", "waitlist");
     params.append("email", email);
+    params.append("bot-field", ""); // honeypot field (must match static HTML form)
+
 
     try {
       const response = await fetch("/", {
