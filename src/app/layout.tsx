@@ -5,8 +5,31 @@ import SectionLink from '@/components/ui/SectionLink';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://localvert.netlify.app'),
   title: 'LocalVert - Private Local File Converter',
   description: 'Convert, Resize & Rename Files Right in Your Browser',
+  openGraph: {
+    title: 'LocalVert - Private Local File Converter',
+    description: 'Convert, Resize & Rename Files Right in Your Browser',
+    url: 'https://localvert.netlify.app',
+    siteName: 'LocalVert',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 800,
+        height: 800,
+        alt: 'LocalVert logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'LocalVert - Private Local File Converter',
+    description: 'Convert, Resize & Rename Files Right in Your Browser',
+    images: ['/images/logo.png'],
+  },
 };
 
 export default function RootLayout({
@@ -24,12 +47,12 @@ export default function RootLayout({
             LocalVert
           </Link>
           <div className="nav-links">
-            <SectionLink href="https://localvert.netlify.app/#features" className="nav-link">Features</SectionLink>
-            <SectionLink href="https://localvert.netlify.app/#pricing" align="center" className="nav-link">Pricing</SectionLink>
-            <SectionLink href="https://localvert.netlify.app/#faq" align="center" className="nav-link">FAQ</SectionLink>
+            <SectionLink href="/#features" className="nav-link">Features</SectionLink>
+            <SectionLink href="/#pricing" align="center" className="nav-link">Pricing</SectionLink>
+            <SectionLink href="/#faq" align="center" className="nav-link">FAQ</SectionLink>
           </div>
           <div className="nav-right" style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <SectionLink href="https://localvert.netlify.app/#pricing" align="center" className="btn btn-outline" style={{ padding: '8px 16px' }}>
+            <SectionLink href="/#pricing" align="center" className="btn btn-outline" style={{ padding: '8px 16px' }}>
               Get License
             </SectionLink>
           </div>
@@ -45,9 +68,9 @@ export default function RootLayout({
             LocalVert
           </Link>
           <div className="footer-links">
-            <SectionLink href="#features" className="footer-link">Features</SectionLink>
-            <SectionLink href="#pricing" align="center" className="footer-link">Pricing</SectionLink>
-            <SectionLink href="#faq" align="center" className="footer-link">FAQ</SectionLink>
+            <SectionLink href="/#features" className="footer-link">Features</SectionLink>
+            <SectionLink href="/#pricing" align="center" className="footer-link">Pricing</SectionLink>
+            <SectionLink href="/#faq" align="center" className="footer-link">FAQ</SectionLink>
             <Link href="/contact" className="footer-link">Contact</Link>
             <Link href="/credits" className="footer-link">Credits</Link>
             <Link href="/privacy" className="footer-link">Privacy</Link>

@@ -18,12 +18,12 @@ const faqItems = [
   {
     question: "What file formats are supported?",
     answer:
-      "We support a wide variety of standard image formats (JPG, PNG, WebP) and document formats. The Pro version unlocks over 50 specific conversions and heavy bulk processing capabilities.",
+      "We support a wide variety of standard image formats (JPG, PNG, WebP) and document formats.",
   },
   {
     question: "How does the lifetime license work?",
     answer:
-      "Our lifetime license is a one-time payment. You get access to all Pro features forever, including all future updates and additions. There are no recurring subscription fees.",
+      "Our lifetime license is a one-time payment. You get access to all premium features forever, including all future updates and additions. There are no recurring subscription fees.",
   },
 ];
 

@@ -27,7 +27,7 @@ export default function HeroSection() {
       </motion.h1>
 
       <motion.p variants={itemVariants}>
-        A powerful Chrome extension that handles file conversions, image resizing, and batch renaming - all locally, instantly, and privately.
+        A powerful Chrome extension that handles file conversions, image resizing, and renaming before downloads - all locally, instantly, and privately.
       </motion.p>
 
       <motion.div className="hero-actions" variants={itemVariants}>

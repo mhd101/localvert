@@ -27,14 +27,14 @@ export default function SectionLink({
       return;
     }
 
-    event.preventDefault();
-
     const id = href.slice(hashIndex + 1);
     const element = document.getElementById(id);
 
     if (!element) {
       return;
     }
+
+    event.preventDefault();
 
     window.history.pushState(null, "", `#${id}`);
     element.scrollIntoView({
