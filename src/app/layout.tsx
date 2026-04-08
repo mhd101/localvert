@@ -6,11 +6,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://localvert.netlify.app'),
-  title: 'LocalVert - Private Local File Converter',
-  description: 'Convert, Resize & Rename Files Right in Your Browser',
+  title: 'LocalVert',
+  description: 'Convert, Resize & Rename Files Right in Your Browser Before Download',
   openGraph: {
-    title: 'LocalVert - Private Local File Converter',
-    description: 'Convert, Resize & Rename Files Right in Your Browser',
+    title: 'LocalVert',
+    description: 'Convert, Resize & Rename Files Right in Your Browser Before Download',
     url: 'https://localvert.netlify.app',
     siteName: 'LocalVert',
     images: [
@@ -26,9 +26,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LocalVert - Private Local File Converter',
-    description: 'Convert, Resize & Rename Files Right in Your Browser',
+    title: 'LocalVert',
+    description: 'Convert, Resize & Rename Files Right in Your Browser Before Download',
     images: ['/images/logo.png'],
+  },
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
   },
 };
 
