@@ -66,11 +66,11 @@ export default function PricingSection() {
             ))}
           </div>
           <SectionLink
-            href="#features"
+            href="#"
             className="btn btn-outline"
             style={{ width: "100%", padding: "12px", justifyContent: "center" }}
           >
-            Explore Free Tools
+            Get Started Free 
           </SectionLink>
         </motion.div>
 

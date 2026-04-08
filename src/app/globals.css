@@ -573,45 +573,113 @@ body {
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px 60px;
+    }
+
     .hero h1 {
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .hero p {
         font-size: 18px;
+        margin-bottom: 32px;
     }
 
     .section-title {
         font-size: 32px;
     }
 
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 48px;
+    }
+
     .navbar {
-        flex-direction: column;
-        gap: 16px;
-        padding: 20px;
+        padding: 16px 20px;
+        position: relative;
+        transform: none;
+        left: 0;
     }
 
     .nav-links {
         display: none;
-        /* simple mobile menu hidden for now */
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+        padding: 32px 24px;
+    }
+
+    .pricing-price {
+        font-size: 36px;
     }
 
     .footer {
         flex-direction: column;
-        gap: 24px;
+        gap: 32px;
         text-align: center;
+        padding-bottom: 60px;
     }
 
     .footer-links {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 16px;
     }
 }
 
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
 
-.github-badge {
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    .pricing-popular-badge {
+        font-size: 11px;
+        padding: 6px 12px;
+        top: -12px;
+    }
+}
+
+
+/* Content Pages (Privacy, Credits, Contact) */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.content-wrapper h2 {
+    color: var(--text-primary);
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.content-wrapper p {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper h2 {
+        font-size: 20px;
+        margin-top: 24px;
+    }
 }
